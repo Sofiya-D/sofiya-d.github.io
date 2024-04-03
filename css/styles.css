@@ -1,0 +1,25 @@
+/* for reference on good practices:
+https://kinsta.com/fr/blog/meilleurs-pratiques-css/
+https://graphiste.com/blog/bonnes-pratiques-css-feuille-style/
+https://www.w3.org/standards/
+*/
+
+body {
+  background-color: #c7e48e;
+}
+
+h1, h2, h3 {
+  color: white;
+  font-family: Tahoma, Verdana, sans-serif;
+
+}
+
+p {
+  color: darkgrey;
+}
+
+section{
+  border-block-start: 4px #c2e184 solid ;
+  border-start-end-radius: 50px;
+  border-inline: 50px;
+}
