@@ -6,6 +6,7 @@ https://www.w3.org/standards/
 
 body {
   background-color: #c7e48e;
+  padding: 4%;
 }
 
 h1, h2, h3 {
@@ -15,7 +16,7 @@ h1, h2, h3 {
 }
 
 p {
-  color: darkgrey;
+  color: black;
 }
 
 section{
@@ -23,3 +24,38 @@ section{
   border-start-end-radius: 50px;
   border-inline: 50px;
 }
+
+
+* {
+  box-sizing: border-box;
+}
+
+.flex-container {
+  display: flex;
+  flex-wrap: wrap;
+  text-align: center;
+}
+
+.flex-work-item {
+  padding: 10px;
+  flex: 30%;
+}
+
+/* Responsive layout - makes a one column-layout instead of a two-column layout */
+@media (max-width: 700px) {
+  .flex-work-item {
+    flex: 100%;
+  }
+
+/* This thig isn't working as I want :(
+.flex-skill-item {
+  padding: 10px;
+  flex: 70%;
+}
+
+@media (max-width: 500px) {
+  .flex-skill-item {
+    flex: 100%;
+  }
+}
+*/
