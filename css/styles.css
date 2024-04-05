@@ -4,58 +4,96 @@ https://graphiste.com/blog/bonnes-pratiques-css-feuille-style/
 https://www.w3.org/standards/
 */
 
-body {
-  background-color: #c7e48e;
-  padding: 4%;
+/* GENERAL */
+* {
+  box-sizing: border-box;
 }
 
-h1, h2, h3 {
-  color: white;
+body {
+  background-color: #09092a;
+  padding: 4%;
   font-family: Tahoma, Verdana, sans-serif;
 
 }
 
-p {
-  color: black;
+h1, h2, h3 {
+  color: white;
 }
 
-section{
-  border-block-start: 4px #c2e184 solid ;
-  border-start-end-radius: 50px;
+h1, h2 {
+  text-align: center;
+ }
+
+ p {
+  color: white;
+ }
+
+.bigger-section{ /* #660033 #19334d*/
+  border-block-start: 4px #660033 solid ;
   border-inline: 50px;
 }
 
-
-* {
-  box-sizing: border-box;
+.presentation p {
+  text-align: justify;
 }
 
 .flex-container {
   display: flex;
   flex-wrap: wrap;
+}
+
+ul {
+  list-style-type: none;
+  color: white;
+  padding: 0;
+}
+
+
+/* RESPONSIVE : GENERAL */
+
+.work {
+  text-align: center;
+}
+.hobbies{
   text-align: center;
 }
 
-.flex-work-item {
-  padding: 10px;
-  flex: 30%;
+.odd {
+  text-align: right;
 }
 
-/* Responsive layout - makes a one column-layout instead of a two-column layout */
-@media (max-width: 700px) {
-  .flex-work-item {
-    flex: 100%;
-  }
-
-/* This thig isn't working as I want :(
-.flex-skill-item {
-  padding: 10px;
-  flex: 70%;
+/* RESPONSIVE : FOR MOBILE PHONES (first) */
+[class*="flex-item"] {
+  flex: 100%;
+}
+.skills{
+    padding-right: 5%;
+    padding-left: 5%;
 }
 
-@media (max-width: 500px) {
-  .flex-skill-item {
-    flex: 100%;
+
+/* RESPONSIVE : FOR TABLETS */
+@media only screen and (min-width: 600px) and (max-width: 900px) {
+  .hobbies {
+    flex: 50%;
   }
 }
-*/
+
+
+/* RESPONSIVE : FOR DESKTOP */
+@media only screen and (min-width: 900px) {
+  .flex-item {
+    padding: 10px;
+  }
+  .work {
+    flex: 30%;
+  }
+  .skills {
+    flex: 50%;
+    padding-right: 10%;
+    padding-left: 10%;
+  }
+  .hobbies {
+    flex: 25%;
+  }
+}
