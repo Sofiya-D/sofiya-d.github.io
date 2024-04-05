@@ -7,39 +7,29 @@ https://www.w3.org/standards/
 /* GENERAL */
 * {
   box-sizing: border-box;
+  font-family: Tahoma, Verdana, sans-serif;
 }
 
 body {
   background-color: #09092a;
-  padding: 4%;
-  font-family: Tahoma, Verdana, sans-serif;
-
+  padding-block-end: 0%;
 }
 
-h1, h2, h3 {
-  color: white;
+footer  {
+  background-color: #040415 ;
+  padding: 0.5%;
+  padding-left: 5% ;
+  padding-right: 5%;
+  width: 100%;
 }
 
 h1, h2 {
   text-align: center;
- }
-
- p {
   color: white;
  }
 
-.bigger-section{ /* #660033 #19334d*/
-  border-block-start: 4px #660033 solid ;
-  border-inline: 50px;
-}
-
-.presentation p {
-  text-align: justify;
-}
-
-.flex-container {
-  display: flex;
-  flex-wrap: wrap;
+h3, p {
+  color: white;
 }
 
 ul {
@@ -48,32 +38,47 @@ ul {
   padding: 0;
 }
 
+.presentation p {
+  text-align: justify;
+}
 
 /* RESPONSIVE : GENERAL */
-
 .work {
   text-align: center;
 }
 .hobbies{
   text-align: center;
 }
-
 .odd {
   text-align: right;
 }
+.flex-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+footer {
+
+}
+
 
 /* RESPONSIVE : FOR MOBILE PHONES (first) */
+.bigger-section{ /* #660033 #19334d*/
+  border-block-start: 4px #660033 solid ;
+  width: 92%;
+  margin-left: 4%;
+  padding-bottom: 20px;
+}
 [class*="flex-item"] {
   flex: 100%;
-}
-.skills{
-    padding-right: 5%;
-    padding-left: 5%;
 }
 
 
 /* RESPONSIVE : FOR TABLETS */
 @media only screen and (min-width: 600px) and (max-width: 900px) {
+  .bigger-section {
+    width: 90%;
+    margin-left: 5%;
+  }
   .hobbies {
     flex: 50%;
   }
@@ -82,16 +87,20 @@ ul {
 
 /* RESPONSIVE : FOR DESKTOP */
 @media only screen and (min-width: 900px) {
-  .flex-item {
+  .bigger-section {
+    width: 88%;
+    margin-left: 6%;
+  }
+  [class*="flex-item"] {
     padding: 10px;
+  }
+  .flex-item-skills {
+    flex: 50%;
+    padding-right: 5%;
+    padding-left: 5%;
   }
   .work {
     flex: 30%;
-  }
-  .skills {
-    flex: 50%;
-    padding-right: 10%;
-    padding-left: 10%;
   }
   .hobbies {
     flex: 25%;
