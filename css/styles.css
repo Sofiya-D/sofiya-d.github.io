@@ -9,7 +9,7 @@ https://www.w3.org/standards/
   box-sizing: border-box;
   font-family: Tahoma, Verdana, sans-serif;
   font-size: 300 1em/1.5;
-  color: #262626; /* black */
+  color: black ; /* #262626 */
   padding: 0;
   margin: 0;
 }
@@ -98,6 +98,9 @@ ul {
   font-size: 1.25em;
   list-style-type: none;
 }
+li {
+  padding-bottom: 10px;
+}
 
 footer img {
   display: block;
@@ -109,23 +112,24 @@ footer img {
   margin: auto;
 }
 
-/* RESPONSIVE : FOR MOBILE PHONES (first) */
-
 .flex-item {
   flex: 100%;
-}
-.social {
-  flex: 50%;
 }
 .prog-languages {
   columns: 3;
   padding-right: 25%;
 }
+.soft-skills{
+  columns: 1;
+}
 .work {
   padding: 0 0 0 0;
 }
+.social {
+  flex: 50%;
+}
 
-/* RESPONSIVE : FOR TABLETS */
+/* RESPONSIVE : FOR TABLETS (& small desktop screens)*/
 @media only screen and (min-width: 600px) and (max-width: 1000px) {
 
   header {
@@ -140,6 +144,10 @@ footer img {
   .prog-languages{
     padding-right: 40%;
   }
+  .soft-skills {
+    columns: 2;
+    padding-left: 35%;
+  }
   .hobbies {
     flex: 50%;
   }
@@ -152,7 +160,7 @@ footer img {
 }
 
 
-/* RESPONSIVE : FOR DESKTOP */
+/* RESPONSIVE : FOR DESKTOP (& bigger screens*/
 @media only screen and (min-width: 1000px) {
 
   header {
