@@ -174,15 +174,13 @@ footer img {
   }
   .skills {
     flex: 50%;
-    padding-right: 5%;
-    padding-left: 5%;
   }
   .prog-languages{
     columns: 2;
   }
   .work {
     flex: 30%;
-    padding: 0 10px 0 10px;
+    padding: 0 20px 0 20px;
   }
   .hobbies {
     flex: 25%;
